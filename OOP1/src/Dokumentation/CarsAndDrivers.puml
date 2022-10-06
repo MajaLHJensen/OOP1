@@ -1,0 +1,24 @@
+@startuml
+'https://plantuml.com/object-diagram
+
+class Car{
+- String make
+- String model
+- int year
+- String bodyStyle
+
++ void setDriver()
++ Driver getDriver()
++ String toString()
+}
+
+class Driver {
+- String name
+- int age
++ String toString()
++ static void main(String[] args)
+}
+
+Driver*-- Car
+
+@enduml

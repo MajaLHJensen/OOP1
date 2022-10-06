@@ -1,0 +1,32 @@
+@startuml
+'https://plantuml.com/object-diagram
+
+class Building{
++ int numbersOfBathrooms
++ int numberOfFloors
++ boolean isOfficeBuilding
+
++ Building()
++ ArrayList<>()
++ int getNumberOfBathrooms()
++ int getNumbersOfFloors
++ boolean getIsOfficeBuilding
++ static void main(String[] args)
++ static int countLampsInBuilding()
++ static boolean isNormal()
+}
+
+class Room{
+- int numberOfDoors
+- int numberOfLamps
+- int numberOfWindows
+
++ Room()
++ int getNumberofDoors
++ int getNumberOfLamps
++ int getNumberOfWindows
+}
+
+Building*-- Room
+
+@enduml
